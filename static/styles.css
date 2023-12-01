@@ -1,0 +1,63 @@
+img {
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: #A9A9A9; /* Replace #yourColor with your desired color code */
+
+}
+
+#navbar {
+    position: fixed;
+    top: 0; /* Positions the navbar at the top of the viewport */
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: #F8F8FF;
+    color: black;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: #ADD8E6;
+    color: black;
+}
+
+#temperature-display, #humidity-display, #speed-display, #login, #apology, #register, #addbutton, #add, #places{
+    font-size: 1.5em; /* Adjust the size as needed */
+    color: #333; /* Choose a color that fits your app's theme */
+    text-align: center;
+    margin: 10px 0; /* Adds space around the divs */
+    background-color: #e9e9e9; /* Slightly darker background on hover */
+    cursor: pointer; /* Change cursor to indicate it's interactive */
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Soft shadow */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    background-color: #F0F8FF; /* Light background color */
+}
+
+#wind-arrow {
+    background-image: url('wind.png'); /* Replace with your arrow image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform-origin: center; /* Ensures the arrow rotates around its center */
+}
+
+#parent-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally in the container */
+    align-items: center; /* Centers vertically in the container */
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+    background-color: #F0F8FF;
+}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My places
+{% endblock %}
+
+{% block main %}
+    <br><br>
+    {% for places in sav %}
+        <div id="places">
+            <h5>{{ places['nickname'] }}</h5>
+            <form id="register" action="/places" method="post">
+                <button type="submit" class="btn btn-secondary btn-lg" value="{{ places['latitude'] }},{{ places['longitude'] }}" name="placebutton">Visit place</button>
+            </form>
+        </div>
+    {% endfor %}
+{% endblock %}

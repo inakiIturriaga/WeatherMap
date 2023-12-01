@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Open Map
+{% endblock %}
+
+{% block main %}
+    <br><br>
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <div id="temperature-display">Temperature: Loading...</div>
+    <div id="humidity-display">Humidity: Loading...</div>
+    <div id="speed-display">Wind: Loading... </div>
+    <div id="parent-container">
+        <div id="wind-arrow" style="width: 50px; height: 50px;"></div>
+    </div>
+    <form id="login" action="/addplace" method="get">
+        <div id="addbutton">
+            <button id="placebutton" class="btn btn-secondary btn-lg">Add Place</button>
+        </div>
+    </form>
+    <br><br>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/script.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaJ3YZ35iegILtoUds0sOoJJ8jatsrNjQ&callback=myMap"></script>
+
+
+{% endblock %}

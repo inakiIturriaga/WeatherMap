@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Place
+{% endblock %}
+
+{% block main %}
+    <br><br>
+    <div id="add">
+        <h3>Save location to My places</h3>
+        <form id="login" action="/addplace" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="nickname" name="nickname" placeholder="Nickname" type="text">
+            </div>
+            <button class="btn btn-primary" type="submit">Add Place</button>
+        </form>
+    </div>
+{% endblock %}
